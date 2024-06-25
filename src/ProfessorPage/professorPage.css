@@ -1,0 +1,127 @@
+/* professorPage.css */
+
+.professorPage {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-x: hidden;
+  /* padding: 0 5px; */
+  /* إضافة بعض المساحة لحاوية الصفحة */
+}
+
+.information {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  justify-content: center;
+  gap: 20px;
+}
+
+.photo {
+  margin-right: 20px;
+  background-color: transparent;
+  border-radius: 100%;
+}
+
+.photo img {
+  width: 120px;
+}
+
+.theName,
+.department {
+  margin-left: 10px;
+}
+
+/* الشبكة تتكيف مع أحجام الشاشات المختلفة */
+
+.selectionOfProfs {
+  display: grid;
+  grid-template-columns: repeat(3, 400px);
+  gap: 20px;
+  /* Adjusts spacing between grid items */
+  padding: 10px;
+}
+
+/* عند عرض الشاشة 992 بكسل أو أقل، استخدم عمودين */
+
+@media (max-width: 992px) {
+  .selectionOfProfs {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* عند عرض الشاشة 768 بكسل أو أقل، استخدم عمود واحد */
+
+@media (max-width: 768px) {
+  .selectionOfProfs {
+    grid-template-columns: 1fr;
+  }
+  .information {
+    font-size: 14px;
+  }
+}
+
+.subjectContainer {
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  /* لتتكيف مع عرض الشبكة */
+}
+
+.subjectTitle {
+  font-size: 1.5rem;
+  margin-bottom: 10px;
+}
+
+.professorRows {
+  margin-top: 10px;
+}
+
+.professorRow {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.professorInfo {
+  margin-left: 10px;
+  display: flex;
+  align-items: center;
+  margin: 5px 10px;
+  gap: 10px;
+}
+
+.professorButton {
+  margin-right: 10px;
+}
+
+.nextOrPrev {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 15px;
+  gap: 15px;
+}
+
+.nextOrPrev button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #e7be0e;
+  border: none;
+  border-radius: 5px;
+  color: rgb(10, 6, 6);
+  cursor: pointer;
+  transition: 0.3s;
+  font-size: 20px;
+  font-family: "almarai";
+}
+
+.nextOrPrev button:hover {
+  background-color: #ffd727;
+  border: 1px solid #333;
+}

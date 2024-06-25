@@ -1,0 +1,113 @@
+.homePage {
+  background-image: url("../assets/bg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  min-height: calc(100vh - 90px);
+  position: relative;
+  overflow-x: hidden;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  bottom: -16%;
+  right: -50%;
+}
+
+.homePage .explaining {
+  background-color: #ddddddc7;
+  border-radius: 15px;
+  color: #1f0f0f;
+  width: 50%;
+  max-width: 800px;
+  padding: 20px;
+  box-sizing: border-box;
+  text-align: center;
+  margin-bottom: 20px;
+  /* مسافة صغيرة من الأسفل */
+}
+
+.explaining .text {
+  margin-bottom: 20px;
+}
+
+.explaining .text p {
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.explaining .enterToSystem {
+  width: 100%;
+  max-width: 320px;
+  height: 50px;
+  border-radius: 15px;
+  border: 2px solid rgb(15, 15, 13);
+  font-size: 22px;
+  font-family: "Almarai";
+  font-weight: 600;
+  text-align: center;
+  background: #a19a84;
+  cursor: pointer;
+  transition: 0.3s;
+  text-decoration: none;
+  padding: 10px 20px;
+  color: #1f0f0f;
+  margin: 0 auto;
+}
+
+.explaining .enterToSystem:hover {
+  background-color: #fcb903;
+  /* border: 2px solid #000000; */
+  color: #000000;
+}
+
+@media (max-width: 992px) {
+  .homePage .explaining {
+    width: 70%;
+    padding: 15px;
+  }
+  .explaining .text p {
+    font-size: 18px;
+  }
+  .explaining .enterToSystem {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .homePage .explaining {
+    width: 90%;
+  }
+  .explaining .text p {
+    font-size: 16px;
+  }
+  .explaining .enterToSystem {
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 576px) {
+  .homePage {
+    padding-bottom: 20px;
+  }
+  .homePage .explaining {
+    width: 95%;
+  }
+  .explaining .text p {
+    font-size: 14px;
+  }
+  .explaining .enterToSystem {
+    font-size: 16px;
+    padding: 10px;
+  }
+}

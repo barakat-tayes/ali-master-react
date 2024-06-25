@@ -1,0 +1,147 @@
+/* printPage.css */
+
+body {
+  font-family: "Almarai", sans-serif;
+  background-color: #f8f9fa;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.printPage {
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.printDetails {
+  width: 80%;
+  margin: 30px auto;
+}
+
+.headerSection {
+  background-color: #007bff;
+  color: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.studentInfo {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.studentInfo h2,
+h3 {
+  margin: 0 0 10px;
+}
+
+.tableContainer {
+  margin-top: 20px;
+  font-family: "Almarai", sans-serif;
+}
+
+.tableContainer {
+  margin-top: 20px;
+}
+
+.scheduleTable {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+  font-size: 16px;
+}
+
+.scheduleTable th,
+.scheduleTable td {
+  border: 1px solid #dee2e6;
+  padding: 12px;
+  font-size: 18px;
+  text-align: center;
+}
+
+.scheduleTable th {
+  background-color: #007bff;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.scheduleTable tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.noDataMessage {
+  padding: 20px;
+  text-align: center;
+  font-size: 18px;
+  color: #ff0000;
+}
+
+.btns {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+}
+
+.btns .printAndSend {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #e7be0e;
+  border: none;
+  border-radius: 5px;
+  color: rgb(10, 6, 6);
+  cursor: pointer;
+  transition: 0.3s;
+  -webkit-transition: 0.3s;
+  -moz-transition: 0.3s;
+  -ms-transition: 0.3s;
+  -o-transition: 0.3s;
+  margin: 10px 15px;
+  font-size: 20px;
+  font-family: "almarai";
+}
+
+.btns .printAndSend:hover {
+  background-color: #ffd727;
+  border: 1px solid #333;
+}
+
+@media (max-width: 992px) {
+  .studentInfo {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+  }
+}
+
+@media (max-width: 768px) {
+  .printPage {
+    overflow-x: hidden;
+  }
+  .headerSection {
+    padding: 10px;
+  }
+  .studentInfo h2,
+  h3 {
+    font-size: 14px;
+  }
+  .scheduleTable th,
+  .scheduleTable td {
+    padding: 8px;
+    font-size: 11px;
+  }
+  .btns .printAndSend {
+    font-size: 13px;
+  }
+  .studentInfo {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    gap: 8px;
+  }
+  .tableContainer h2 {
+    font-size: 16px;
+  }
+}
