@@ -158,6 +158,7 @@ const ProfessorPage = () => {
       const subject = subjects.find((sub) => sub.id === subjectId);
       return subject && selectedProfessors[subject.name];
     });
+
     /*
     const hasConflict = storedSelectedSubjects.some((subjectId) => {
       const subject = subjects.find((sub) => sub.id === subjectId);
